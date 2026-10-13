@@ -1,0 +1,36 @@
+{
+  "name": "trade-wiki",
+  "version": "1.0.0",
+  "description": "Trade Wiki",
+  "author": "Trade Wiki",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "dist": "electron-builder --win portable"
+  },
+  "devDependencies": {
+    "electron": "^44.5.1",
+    "electron-builder": "^26.15.3"
+  },
+  "build": {
+    "appId": "local.tradewiki",
+    "productName": "Trade Wiki",
+    "files": [
+      "main.js",
+      "preload.js",
+      "bitunix.js",
+      "index.html",
+      "styles.css",
+      "js/**/*",
+      "build/icon.png",
+      "seed-vwap-short.jpg",
+      "vendor/lw-charts.js",
+      "vendor/LICENSE-lightweight-charts.txt",
+      "lw-charts.js"
+    ],
+    "win": {
+      "target": "portable",
+      "icon": "build/icon.png"
+    }
+  }
+}
