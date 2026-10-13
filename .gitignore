@@ -1,0 +1,8 @@
+node_modules/
+dist/
+data/
+TradeWiki-Data/
+secrets.bin
+*.tmp
+*.corrupt-*.json
+.env
